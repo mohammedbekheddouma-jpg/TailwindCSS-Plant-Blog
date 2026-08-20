@@ -1,0 +1,579 @@
+```html
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fluffy McDuck - Plant Blog</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-slate-800">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="bg-slate-700 text-white p-4 text-center border-slate-500 border-b-4 border-double">
+
+        <section>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 164.56 162.44"
+                 fill="white"
+                 class="w-10 mx-auto">
+                <path d="M88.94 119.91v42.53H75.4V92.17c-26.58.24-47.78-9.8-62.83-31.49C.01 42.59-.81 21.91.41.47 20.12-.94 39.07.28 56.17 11.7c16.82 11.23 26.68 27.1 31.55 47.46 10.5-14.19 22.98-24.84 39.54-28.46 11.82-2.59 24.14-2.93 36.15-4.26 6.86 44.12-17.09 92.51-74.47 93.48zM14.33 14.31C12.4 48.23 36.69 81.49 75.09 77.17c1.17-36.65-25.68-64.07-60.76-62.86zm75.07 90.8c37.04.92 61.67-25.55 60.93-63.1-32.53-4.75-62.82 26.43-60.93 63.1z" />
+            </svg>
+        </section>
+
+        <nav class="font-bold font-mono pt-3 flex justify-center gap-6">
+            <a href="#" class="hover:text-slate-300 transition-colors">
+                Blog
+            </a>
+
+            <a href="#subscribe" class="hover:text-slate-300 transition-colors">
+                Contact
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <h1 class="text-center text-2xl font-bold my-6 font-mono uppercase tracking-widest">
+            Blog
+        </h1>
+
+
+        <section class="w-11/12 max-w-6xl mx-auto mb-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+
+            <!-- ================= CARD 1 ================= -->
+
+            <article class="rounded-lg shadow-md hover:shadow-lg overflow-hidden bg-white transition-shadow duration-300">
+
+                <img src="../img/post_houseplants.jpg"
+                     alt="Houseplants with Attitude"
+                     class="w-full h-52 object-cover opacity-80 hover:opacity-100 transition-opacity duration-300">
+
+                <section class="p-4 flex flex-col gap-2">
+
+                    <section class="flex items-center justify-between">
+
+                        <section class="flex items-center">
+
+                            <div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-sm">
+                                F
+                            </div>
+
+                            <span class="text-sm text-slate-500 ml-2">
+                                Fern Greenleaf
+                            </span>
+
+                        </section>
+
+                        <button type="button"
+                                class="text-slate-500 hover:text-slate-800 text-xl"
+                                aria-label="More options">
+                            ⋮
+                        </button>
+
+                    </section>
+
+
+                    <h2 class="font-medium text-xl leading-snug text-slate-600 hover:underline cursor-pointer">
+                        Houseplants with Attitude:
+                        Meet the Divas of Your Living Room
+                    </h2>
+
+
+                    <p class="line-clamp-3 text-sm">
+                        If you thought your Monstera was just sitting quietly in
+                        the corner, think again! These houseplants are full of
+                        sass, drama, and demands. From diva-like Calatheas that
+                        throw a tantrum if you mist them wrong to ferns that seem
+                        to love dying for attention.
+                    </p>
+
+
+                    <hr class="my-3">
+
+
+                    <section class="flex items-center justify-between">
+
+                        <span id="likes-1" class="text-sm text-slate-500 italic">
+                            9 likes
+                        </span>
+
+                        <!-- HEART -->
+                        <button type="button"
+                                onclick="toggleLike(1, this)"
+                                aria-label="Like post"
+                                class="cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 24 24"
+                                 class="heart w-7 h-7 transition-all duration-200 hover:scale-110">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                                    C2 5.42 4.42 3 7.5 3
+                                    C9.24 3 10.91 3.81 12 5.09
+                                    C13.09 3.81 14.76 3 16.5 3
+                                    C19.58 3 22 5.42 22 8.5
+                                    C22 12.28 18.6 15.36 13.45 20.03
+                                    L12 21.35Z" />
+                            </svg>
+                        </button>
+
+                    </section>
+
+                </section>
+
+            </article>
+
+
+            <!-- ================= CARD 2 ================= -->
+
+            <article class="rounded-lg shadow-md hover:shadow-lg overflow-hidden bg-white transition-shadow duration-300">
+
+                <img src="../img/post_secret.jpg"
+                     alt="The Secret Social Lives of Plants"
+                     class="w-full h-52 object-cover opacity-80 hover:opacity-100 transition-opacity duration-300">
+
+                <section class="p-4 flex flex-col gap-2">
+
+                    <section class="flex items-center justify-between">
+
+                        <section class="flex items-center">
+
+                            <div class="w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold text-sm">
+                                D
+                            </div>
+
+                            <span class="text-sm text-slate-500 ml-2">
+                                Daisy Digwell
+                            </span>
+
+                        </section>
+
+                        <button type="button"
+                                class="text-slate-500 hover:text-slate-800 text-xl"
+                                aria-label="More options">
+                            ⋮
+                        </button>
+
+                    </section>
+
+
+                    <h2 class="font-medium text-xl leading-snug text-slate-600 hover:underline cursor-pointer">
+                        The Secret Social Lives of Plants
+                    </h2>
+
+
+                    <p class="line-clamp-3 text-sm">
+                        Your plants aren’t just photosynthesising - oh no,
+                        they’re plotting. While you’re sleeping, your ficus
+                        is texting the succulents about that time you forgot
+                        to water them.
+                    </p>
+
+
+                    <hr class="my-3">
+
+
+                    <section class="flex items-center justify-between">
+
+                        <span id="likes-2" class="text-sm text-slate-500 italic">
+                            11 likes
+                        </span>
+
+                        <!-- HEART -->
+                        <button type="button"
+                                onclick="toggleLike(2, this)"
+                                aria-label="Like post"
+                                class="cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 24 24"
+                                 class="heart w-7 h-7 transition-all duration-200 hover:scale-110">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                                    C2 5.42 4.42 3 7.5 3
+                                    C9.24 3 10.91 3.81 12 5.09
+                                    C13.09 3.81 14.76 3 16.5 3
+                                    C19.58 3 22 5.42 22 8.5
+                                    C22 12.28 18.6 15.36 13.45 20.03
+                                    L12 21.35Z" />
+                            </svg>
+                        </button>
+
+                    </section>
+
+                </section>
+
+            </article>
+
+
+            <!-- ================= CARD 3 ================= -->
+
+            <article class="rounded-lg shadow-md hover:shadow-lg overflow-hidden bg-white transition-shadow duration-300">
+
+                <img src="../img/post_vegetable.jpg"
+                     alt="Vegetable Gardening for Lazy People"
+                     class="w-full h-52 object-cover opacity-80 hover:opacity-100 transition-opacity duration-300">
+
+                <section class="p-4 flex flex-col gap-2">
+
+                    <section class="flex items-center justify-between">
+
+                        <section class="flex items-center">
+
+                            <div class="w-8 h-8 rounded-full bg-orange-600 text-white flex items-center justify-center font-bold text-sm">
+                                I
+                            </div>
+
+                            <span class="text-sm text-slate-500 ml-2">
+                                Ivy Sproutson
+                            </span>
+
+                        </section>
+
+                        <button type="button"
+                                class="text-slate-500 hover:text-slate-800 text-xl"
+                                aria-label="More options">
+                            ⋮
+                        </button>
+
+                    </section>
+
+
+                    <h2 class="font-medium text-xl leading-snug text-slate-600 hover:underline cursor-pointer">
+                        Vegetable Gardening for Lazy People
+                    </h2>
+
+
+                    <p class="line-clamp-3 text-sm">
+                        Gardening doesn’t have to be hard, especially if
+                        you’re a pro at doing as little as possible!
+                        Here’s your guide to growing veggies that practically
+                        take care of themselves.
+                    </p>
+
+
+                    <hr class="my-3">
+
+
+                    <section class="flex items-center justify-between">
+
+                        <span id="likes-3" class="text-sm text-slate-500 italic">
+                            7 likes
+                        </span>
+
+                        <!-- HEART -->
+                        <button type="button"
+                                onclick="toggleLike(3, this)"
+                                aria-label="Like post"
+                                class="cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 24 24"
+                                 class="heart w-7 h-7 transition-all duration-200 hover:scale-110">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                                    C2 5.42 4.42 3 7.5 3
+                                    C9.24 3 10.91 3.81 12 5.09
+                                    C13.09 3.81 14.76 3 16.5 3
+                                    C19.58 3 22 5.42 22 8.5
+                                    C22 12.28 18.6 15.36 13.45 20.03
+                                    L12 21.35Z" />
+                            </svg>
+                        </button>
+
+                    </section>
+
+                </section>
+
+            </article>
+
+
+            <!-- ================= CARD 4 ================= -->
+
+            <article class="rounded-lg shadow-md hover:shadow-lg overflow-hidden bg-white transition-shadow duration-300">
+
+                <img src="../img/post_kill.jpg"
+                     alt="Plants You Can't Kill"
+                     class="w-full h-52 object-cover opacity-80 hover:opacity-100 transition-opacity duration-300">
+
+                <section class="p-4 flex flex-col gap-2">
+
+                    <section class="flex items-center justify-between">
+
+                        <section class="flex items-center">
+
+                            <div class="w-8 h-8 rounded-full bg-pink-600 text-white flex items-center justify-center font-bold text-sm">
+                                L
+                            </div>
+
+                            <span class="text-sm text-slate-500 ml-2">
+                                Lily Thistleton
+                            </span>
+
+                        </section>
+
+                        <button type="button"
+                                class="text-slate-500 hover:text-slate-800 text-xl"
+                                aria-label="More options">
+                            ⋮
+                        </button>
+
+                    </section>
+
+
+                    <h2 class="font-medium text-xl leading-snug text-slate-600 hover:underline cursor-pointer">
+                        Plants You Can’t Kill
+                        (Unless You’re Actively Trying)
+                    </h2>
+
+
+                    <p class="line-clamp-3 text-sm">
+                        If your thumb is more brown than green, this post
+                        is for you. We’ve gathered the hardiest plants that
+                        can survive even the worst neglect.
+                    </p>
+
+
+                    <hr class="my-3">
+
+
+                    <section class="flex items-center justify-between">
+
+                        <span id="likes-4" class="text-sm text-slate-500 italic">
+                            2 likes
+                        </span>
+
+                        <!-- HEART -->
+                        <button type="button"
+                                onclick="toggleLike(4, this)"
+                                aria-label="Like post"
+                                class="cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 24 24"
+                                 class="heart w-7 h-7 transition-all duration-200 hover:scale-110">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                                    C2 5.42 4.42 3 7.5 3
+                                    C9.24 3 10.91 3.81 12 5.09
+                                    C13.09 3.81 14.76 3 16.5 3
+                                    C19.58 3 22 5.42 22 8.5
+                                    C22 12.28 18.6 15.36 13.45 20.03
+                                    L12 21.35Z" />
+                            </svg>
+                        </button>
+
+                    </section>
+
+                </section>
+
+            </article>
+
+
+            <!-- ================= CARD 5 ================= -->
+
+            <article class="rounded-lg shadow-md hover:shadow-lg overflow-hidden bg-white transition-shadow duration-300">
+
+                <img src="../img/post_quirky.jpg"
+                     alt="Grow Your Own Quirky Garden Gang"
+                     class="w-full h-52 object-cover opacity-80 hover:opacity-100 transition-opacity duration-300">
+
+                <section class="p-4 flex flex-col gap-2">
+
+                    <section class="flex items-center justify-between">
+
+                        <section class="flex items-center">
+
+                            <div class="w-8 h-8 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-sm">
+                                B
+                            </div>
+
+                            <span class="text-sm text-slate-500 ml-2">
+                                Basil Bloomfield
+                            </span>
+
+                        </section>
+
+                        <button type="button"
+                                class="text-slate-500 hover:text-slate-800 text-xl"
+                                aria-label="More options">
+                            ⋮
+                        </button>
+
+                    </section>
+
+
+                    <h2 class="font-medium text-xl leading-snug text-slate-600 hover:underline cursor-pointer">
+                        Grow Your Own Quirky Garden Gang
+                    </h2>
+
+
+                    <p class="line-clamp-3 text-sm">
+                        Why settle for ordinary plants when you can have
+                        a garden full of characters? From the playful
+                        Sensitive Plant to the dramatic Venus Flytrap,
+                        discover some quirky plant pals.
+                    </p>
+
+
+                    <hr class="my-3">
+
+
+                    <section class="flex items-center justify-between">
+
+                        <span id="likes-5" class="text-sm text-slate-500 italic">
+                            20 likes
+                        </span>
+
+                        <!-- HEART -->
+                        <button type="button"
+                                onclick="toggleLike(5, this)"
+                                aria-label="Like post"
+                                class="cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 24 24"
+                                 class="heart w-7 h-7 transition-all duration-200 hover:scale-110">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+                                    C2 5.42 4.42 3 7.5 3
+                                    C9.24 3 10.91 3.81 12 5.09
+                                    C13.09 3.81 14.76 3 16.5 3
+                                    C19.58 3 22 5.42 22 8.5
+                                    C22 12.28 18.6 15.36 13.45 20.03
+                                    L12 21.35Z" />
+                            </svg>
+                        </button>
+
+                    </section>
+
+                </section>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="subscribe"
+            class="bg-slate-700 text-white p-4 text-center border-slate-500 border-t-4 border-double">
+
+        <section class="max-w-2xl mx-auto">
+
+            <h3 class="font-bold uppercase font-mono mb-4">
+                Subscribe
+            </h3>
+
+            <p>
+                Want to get notified when a new blog post is up?
+                Sign up for the newsletter and never miss out!
+            </p>
+
+
+            <form class="my-4 w-full flex">
+
+                <input class="p-2 text-slate-800 rounded-l-lg flex-grow
+                           placeholder:text-slate-400
+                           focus:outline-none
+                           focus:ring-2
+                           focus:ring-slate-300"
+                       type="email"
+                       placeholder="email@example.com">
+
+                <input class="bg-slate-300 text-slate-800 p-2 font-medium
+                           rounded-r-lg hover:bg-slate-200
+                           cursor-pointer focus:outline-none
+                           focus:ring-2 focus:ring-slate-300"
+                       type="submit"
+                       value="Sign Up">
+
+            </form>
+
+
+            <span class="text-xs font-mono">
+                &copy; Fluffy McDuck
+            </span>
+
+        </section>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+                const likes = {
+                    1: 9,
+                    2: 11,
+                    3: 7,
+                    4: 2,
+                    5: 20
+                };
+
+                const liked = {
+                    1: false,
+                    2: false,
+                    3: false,
+                    4: false,
+                    5: false
+                };
+
+
+                function toggleLike(cardId, button) {
+
+                    const heart = button.querySelector(".heart");
+                    const likesText = document.getElementById("likes-" + cardId);
+
+
+                    if (liked[cardId] === false) {
+
+                        // LIKE
+                        liked[cardId] = true;
+                        likes[cardId]++;
+
+                        // الأحمر بالكامل
+                        heart.style.fill = "#ef4444";
+
+                        heart.style.transform = "scale(1.12)";
+
+                    } else {
+
+                        // UNLIKE
+                        liked[cardId] = false;
+                        likes[cardId]--;
+
+                        // أبيض من الداخل مع حدود سوداء
+                        heart.style.fill = "#ffffff";
+
+                        heart.style.transform = "scale(1)";
+                    }
+
+
+                    likesText.textContent = likes[cardId] + " likes";
+                }
+
+
+                // الحالة الابتدائية:
+                // أبيض من الداخل + محيط أسود
+
+                document.querySelectorAll(".heart").forEach(function (heart) {
+
+                    heart.style.fill = "#ffffff";
+                    heart.style.stroke = "#000000";
+                    heart.style.strokeWidth = "1.8";
+                    heart.style.strokeLinejoin = "round";
+                    heart.style.strokeLinecap = "round";
+
+                });
+
+    </script>
+
+</body>
+
+</html>
+```
