@@ -52,14 +52,22 @@ TailwindCSS-Plant-Blog/
 
 https://github.com/mohammedbekheddouma-jpg/TailwindCSS-Plant-Blog
 
-## 🚀 Getting Started
+## 🚀 How to Run
 
-```bash
-git clone https://github.com/mohammedbekheddouma-jpg/TailwindCSS-Plant-Blog.git
-cd TailwindCSS-Plant-Blog
-```
+### Method 1 — Live Server
 
-Open `index.html` in a modern browser. Tailwind CSS is loaded through the CDN, so an internet connection is required.
+1. Open the project in **Visual Studio Code**.
+2. Install the **Live Server** extension.
+3. Open `index.html`.
+4. Right-click the file and select **Open with Live Server**.
+
+### Method 2 — Open Directly in the Browser
+
+1. Clone or download the repository.
+2. Open the project folder.
+3. Open `index.html` directly in a modern web browser.
+
+> Tailwind CSS is loaded through the CDN, so an internet connection is required for the Tailwind styles to load.
 
 ## 👨‍💻 Author
 
