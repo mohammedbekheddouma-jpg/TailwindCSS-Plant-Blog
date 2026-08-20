@@ -1,11 +1,10 @@
-````md
 # Tailwind CSS Plant Blog
 
 A responsive plant blog website built to practice and demonstrate **Tailwind CSS** utility-first styling.
 
 ## About
 
-This project focuses primarily on applying Tailwind CSS to build a modern and responsive blog interface without writing traditional CSS stylesheets.
+This project focuses primarily on applying Tailwind CSS to build a modern and responsive blog interface using utility classes instead of traditional CSS stylesheets.
 
 ## Tailwind CSS Concepts Practiced
 
@@ -45,15 +44,14 @@ TailwindCSS-Plant-Blog/
 │   ├── post_kill.jpg
 │   └── post_quirky.jpg
 └── README.md
-````
+```
 
 ## Goal
 
 The main goal of this project was to strengthen my practical understanding of **Tailwind CSS** by transforming a blog design into a responsive interface using Tailwind utility classes.
 
-## Author
+## 👨‍💻 Author
 
-Mohammed Bekheddouma
+**Mohammed Bekheddouma**
 
-```
-```
+GitHub: https://github.com/mohammedbekheddouma-jpg
